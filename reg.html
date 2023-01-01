@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <title>REGISTER</title>
+    <link rel="stylesheet" href=" style.css" />
+    <script src="custom.js"></script>
+  </head>
+
+  <body
+    class="welcome"
+    onload="captcha()"
+    id="inner_page"
+    data-spy="scroll"
+    data-target="#navbar-wd"
+    data-offset="98"
+  >
+    <div id="outer">
+      <form id="this" onload="resetform()">
+        <div class="image-base">
+          <div class="image"></div>
+        </div>
+        <div class="plate"></div>
+        <div class="container">
+          <form id="resetpage">
+            <input
+              type="text"
+              class="textfi left"
+              name="firstname"
+              placeholder="First Name"
+              required=""
+            />
+            <input
+              type="text"
+              class="textfi right"
+              name="lastname"
+              placeholder="Second Name"
+              required=""
+            />
+            <input
+              type="text"
+              class="textfi left"
+              name="fathername"
+              placeholder="Father Name"
+              required=""
+            />
+            <input
+              type="text"
+              class="textfi right"
+              name="mothername"
+              placeholder="Mother Name"
+              required=""
+            />
+            <input
+              type="date"
+              class="textfi left"
+              name="dob"
+              placeholder="D-O-B"
+              required=""
+            />
+            <select class="form-control textfi right" name="gender" required="">
+              <option selected="">----Select Gender----</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <select
+              class="form-control textfi right"
+              name="enrollnmentid"
+              required=""
+            >
+              <option selected="">--Select Enroll.No.--</option>
+            </select>
+            <input
+              id="mobile"
+              class="textfi left"
+              placeholder="Mobile No."
+              type="number"
+              name="mobilenumber"
+              required=""
+            />
+            <input
+              type="email"
+              class="textfi left"
+              name="emailaddress"
+              placeholder="Enter E-mail"
+              required=""
+            />
+            <input
+              type="text"
+              class="textfi right"
+              name="aadharcard"
+              placeholder="Aadhar Number"
+              required=""
+            />
+
+            <input
+              type="password"
+              class="textfi left"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              required=""
+            />
+            <input
+              type="password"
+              class="textfi right"
+              id="passworda"
+              name="passworda"
+              placeholder="Confirm Password"
+              required=""
+            />
+            <select
+              class="form-control textfi left"
+              style="width: 740px"
+              name="branch"
+              required=""
+            >
+              <option selected="">-Select Department Name-</option>
+              <option>Computer Science & Engineering</option>
+              <option>Electronics Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Electrical Engineering</option>
+              <option>Others</option>
+            </select>
+            <input type="text" class="texwtfi left" id="capt" readonly />
+            <input
+              type="button"
+              id="reload"
+              class="textffi left"
+              value="RELOAD"
+              onclick="captcha()"
+            />
+            <input
+              type="text"
+              id="catch"
+              class="textfi inputcapt left"
+              placeholder="Enter captcha"
+            />
+            <label style="font-size: 20px; width: 700px" class="textfi left">
+              <input
+                style="height: 20px; width: 20px; color: white"
+                type="checkbox"
+                required=""
+              />
+              Verify all the above information is correct!!..
+            </label>
+
+            <button
+              type="submit"
+              class="textfi"
+              value="submit"
+              onclick="match()"
+            >
+              Register
+            </button>
+          </form>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
